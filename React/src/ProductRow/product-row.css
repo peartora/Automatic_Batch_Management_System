@@ -1,0 +1,12 @@
+@keyframes splash {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: initial;
+  }
+}
+
+.splash-box {
+  animation: splash 500ms;
+}

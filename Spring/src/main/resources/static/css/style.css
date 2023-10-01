@@ -1,0 +1,20 @@
+@media print {
+
+    .non-printable {
+        display: none;
+    }
+
+    #printable .page {
+        page-break-after: always;
+    }
+}
+
+@media screen {
+    #printable .page {
+        display: none;
+    }
+
+    #printable .page:first-of-type {
+        display: block;
+    }
+}

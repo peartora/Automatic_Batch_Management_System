@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="my-form" method="post">
+        <div>
+            <label for="part-name">부품번호를 선택 하세요</label>
+            <select id="part-name" name="part-name"></select>
+        </div>
+        <div>
+            <label for="start">Start</label>
+            <input type="date" name="start" id="start">
+        </div>
+        <div>
+            <label for="end">End</label>
+            <input type="date" name="end" id="end">
+        </div>
+        <input type="submit">
+    </form>
+    <h2>시간 범위 선택 하지 않으면 DB에 존재하는 이력 전부를 결과에 반영 합니다.</h2>
+
+    <script src="./js/input-history.js"></script>
+</body>
+</html>

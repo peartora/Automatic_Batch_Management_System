@@ -1,0 +1,10 @@
+spring:
+  web:
+    resources:
+      static-locations: file:src/main/resources/static/
+      cache:
+        period: 0
+  mustache:
+    prefix: file:src/main/resources/templates/
+    cache: false
+

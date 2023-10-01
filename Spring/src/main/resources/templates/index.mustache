@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<template id="page-template">
+    <div class="page">
+        <div class="part-name"></div>
+        <div class="part-number"></div>
+        <div class="barcode-number"></div>
+        <div class="time"></div>
+        <canvas class="barcode-image"></canvas>
+    </div>
+</template>
+
+<div class="non-printable">
+    <form id="my-form" method="post">
+        <label for="barcode">슬립을 스캔 하세요.</label>
+        <input type="text" id="barcode" name="barcode">
+        <input type="submit">
+    </form>
+
+    <h2 id="reading-result"></h2>
+</div>
+
+<div id="printable"></div>
+
+<div class="non-printable">
+    <div>
+        <button type="button" onclick="print()">프린트!</button>
+    </div>
+</div>
+
+<script src="/js/dayjs.min.js"></script>
+<script src="/js/JsBarcode.all.min.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
